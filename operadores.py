@@ -26,7 +26,7 @@ class operadores:
         print(f"El resultado es: {self.a / self.b}")
 
 def operar():
-    print("Que putas quiere hacer?\n 1 - Sumar\n 2 - Restar\n 3 - Multiplicar\n 4 - Dividir\n")
+    print("\nQue quiere hacer?\n1 - Sumar\n2 - Restar\n3 - Multiplicar\n4 - Dividir\n")
 
     opcion = int(input("Ingresa una opción: "))
 
@@ -43,4 +43,16 @@ def operar():
     else:
         print("Opción no valida.")
 
-operar()
+def menu():
+    print("\n1 - Seleccionar una operación a realizar\n2 - Salir")
+
+    opcion = int(input("Ingresa una opción: "))
+
+    if(opcion == 1):
+        operar()
+    elif(opcion == 2):
+        exit()
+    else:
+        print("Opción no válida.")
+
+menu()
