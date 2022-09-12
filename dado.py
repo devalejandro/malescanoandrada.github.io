@@ -17,4 +17,6 @@ class dado():
             print(f"Para el dado {cont+1} salió {i}")
 
 dado1 = dado(6)
+dado2 = dado(50)
 dado1.cantidad_dados(6)
+dado2.cantidad_dados(2)
